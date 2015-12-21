@@ -21,9 +21,9 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 1.9.3'
 
   spec.add_dependency "httparty", "~> 0.13"
-  spec.add_dependency "activesupport", "~> 4.1"
+  spec.add_dependency "activesupport", "~> 3.2"
   spec.add_dependency "ri_cal", "~> 0.8"
-  spec.add_dependency "tzinfo", "~> 1.2"
+  spec.add_dependency "tzinfo", "~> 0.3"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
