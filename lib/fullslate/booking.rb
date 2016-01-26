@@ -26,15 +26,14 @@ module Fullslate
 
     def initialize(params)
       @id = params["id"]
+      raise Fullslate::BookingNotFound unless @id
+
       @employee_name = params["employee"]["name"]
       @at = params["at"]
       @to = params["to"]
       @deleted = params["deleted"]
       @service_id = params["services"].first["id"]
 
-      if @id.nil?
-        raise Fullslate::BookingNotFound
-      end
     end
   end
 
