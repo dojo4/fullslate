@@ -1,3 +1,5 @@
+require 'time'
+
 module Fullslate
 
   # {
@@ -29,8 +31,8 @@ module Fullslate
       raise Fullslate::BookingNotFound unless @id
 
       @employee_name = params["employee"]["name"]
-      @at = params["at"]
-      @to = params["to"]
+      @at = Time.parse(params["at"])
+      @to = Time.parse(params["to"])
       @deleted = params["deleted"]
       @service_id = params["services"].first["id"]
 
