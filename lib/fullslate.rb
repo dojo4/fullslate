@@ -51,4 +51,5 @@ require 'fullslate/employee'
 require 'fullslate/service'
 require 'fullslate/client'
 require 'fullslate/event'
+require 'fullslate/booking'
 

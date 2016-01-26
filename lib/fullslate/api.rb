@@ -18,6 +18,10 @@ module Fullslate
         fullslate_object(id, Fullslate::Employee, opts)
       end
 
+      def booking(id, opts = {})
+        fullslate_object(id, Fullslate::Booking, opts)
+      end
+
       def services(opts = {})
         fullslate_objects(Fullslate::Service, opts)
       end
